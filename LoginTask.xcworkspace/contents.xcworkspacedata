@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/techlabs/Desktop/LoginTask/LoginTask.xcodeproj">
+      location = "group:LoginTask.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

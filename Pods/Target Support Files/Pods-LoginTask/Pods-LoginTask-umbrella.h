@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TamatmayaIOSVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TamatmayaIOSVersionString[];
+FOUNDATION_EXPORT double Pods_LoginTaskVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_LoginTaskVersionString[];
 

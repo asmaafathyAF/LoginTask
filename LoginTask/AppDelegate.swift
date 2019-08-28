@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  TamatmayaIOS
+//  LoginTask
 //
 //  Created by Jets39 on 7/21/19.
 //  Copyright © 2019 Jets39. All rights reserved.

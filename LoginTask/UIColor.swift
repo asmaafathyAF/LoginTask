@@ -1,6 +1,6 @@
 //
 //  UIColor.swift
-//  TamatmayaIOS
+//  LoginTask
 //
 //  Created by Jets39 on 7/22/19.
 //  Copyright © 2019 Jets39. All rights reserved.
