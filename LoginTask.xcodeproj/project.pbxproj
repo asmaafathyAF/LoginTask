@@ -19,7 +19,7 @@
 		785EFB4E230EEE340012D8C3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785EFB4D230EEE340012D8C3 /* Login.storyboard */; };
 		78790784231357E0001AA7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78790783231357E0001AA7CB /* Assets.xcassets */; };
 		788A5279231408AC00F7B932 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 788A5278231408AC00F7B932 /* Fonts */; };
-		78CDE731230EFA7C00DBC413 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDE730230EFA7C00DBC413 /* LoginAPI.swift */; };
+		78903E052316B8550025196B /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78903E042316B8550025196B /* LoginAPI.swift */; };
 		78CDE739230F547500DBC413 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDE738230F547500DBC413 /* LoginViewController.swift */; };
 		78FA2F8B23107AB9007B79EF /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA2F8A23107AB9007B79EF /* Urls.swift */; };
 		78FA2F922310874A007B79EF /* ViewControllersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA2F912310874A007B79EF /* ViewControllersProvider.swift */; };
@@ -65,7 +65,7 @@
 		785EFB4D230EEE340012D8C3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		78790783231357E0001AA7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		788A5278231408AC00F7B932 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../../Fonts; sourceTree = "<group>"; };
-		78CDE730230EFA7C00DBC413 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		78903E042316B8550025196B /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
 		78CDE738230F547500DBC413 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78FA2F8A23107AB9007B79EF /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		78FA2F912310874A007B79EF /* ViewControllersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersProvider.swift; sourceTree = "<group>"; };
@@ -135,7 +135,6 @@
 		2108E00522E4F79000A870AF /* TamatmayaIOS */ = {
 			isa = PBXGroup;
 			children = (
-				78FA2F9023108726007B79EF /* Utilities */,
 				2108E03622E4F7F200A870AF /* Model */,
 				2108E03522E4F7E500A870AF /* View */,
 				2108E03422E4F7C000A870AF /* Controller */,
@@ -187,6 +186,7 @@
 		2108E03622E4F7F200A870AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78FA2F9023108726007B79EF /* Utilities */,
 				2108E05322E50A8900A870AF /* Extensions */,
 				78CDE72F230EFA4700DBC413 /* API */,
 				780BCB5C2316101300161BE0 /* UserModel.swift */,
@@ -216,8 +216,8 @@
 		78CDE72F230EFA4700DBC413 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				78CDE730230EFA7C00DBC413 /* LoginAPI.swift */,
 				78FA2F8A23107AB9007B79EF /* Urls.swift */,
+				78903E042316B8550025196B /* LoginAPI.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -420,10 +420,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2108E05522E54B2F00A870AF /* UIColor.swift in Sources */,
+				78903E052316B8550025196B /* LoginAPI.swift in Sources */,
 				2108E00722E4F79000A870AF /* AppDelegate.swift in Sources */,
 				2108E05E22E55E0D00A870AF /* UIView+Extensions.swift in Sources */,
 				2108E05822E5583A00A870AF /* SplashViewController.swift in Sources */,
-				78CDE731230EFA7C00DBC413 /* LoginAPI.swift in Sources */,
 				78FA2F9823109462007B79EF /* RootViewController.swift in Sources */,
 				78FA2F8B23107AB9007B79EF /* Urls.swift in Sources */,
 				78CDE739230F547500DBC413 /* LoginViewController.swift in Sources */,
