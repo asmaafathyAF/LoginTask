@@ -23,16 +23,19 @@ class LoginViewController: UIViewController  {
    override func viewDidLoad() {
     super.viewDidLoad()
     setupUI()
+    addSubLayerToBackgroundView()
     createIconsToTextFields()
     addShadowToTextFields()
    }
+    func addSubLayerToBackgroundView() {
+        backgrounView.layer.addSublayer(self.logoImageView.layer)
+        backgrounView.layer.addSublayer(self.loginLabel.layer)
+    }
     func setupUI() {
-        self.backgrounView.setGradient(firstColorGradient: UIColor(red: 0xff, green: 0x5f, blue: 0x00), secondColorGradient: UIColor(red: 0xff, green: 0x90, blue: 0x00))
-        self.loginButton.setGradient(firstColorGradient: UIColor(red: 0xff, green: 0x5f, blue: 0x00), secondColorGradient: UIColor(red: 0xff, green: 0x90, blue: 0x00), startPoint: CGPoint(x: 1.0, y: 0.5), endPoint: CGPoint(x: 0.0, y: 0.5))
-        self.backgrounView.roundCorners(corners: UIRectCorner.bottomLeft, radius: self.backgrounView.frame.height/3)
-        self.backgrounView.layer.addSublayer(self.logoImageView.layer)
-        self.backgrounView.layer.addSublayer(self.loginLabel.layer)
-   }
+        backgrounView.setGradient(firstColorGradient: UIColor(red: 0xff, green: 0x5f, blue: 0x00), secondColorGradient: UIColor(red: 0xff, green: 0x90, blue: 0x00))
+        loginButton.setGradient(firstColorGradient: UIColor(red: 0xff, green: 0x5f, blue: 0x00), secondColorGradient: UIColor(red: 0xff, green: 0x90, blue: 0x00), startPoint: CGPoint(x: 1.0, y: 0.5), endPoint: CGPoint(x: 0.0, y: 0.5))
+        backgrounView.roundCorners(corners: UIRectCorner.bottomLeft, radius: backgrounView.frame.height/3)
+    }
     func addShadowToTextFields() {
         emailEditText.addShadow(shadowRadius:4 ,shadowOpacity: 0.5)
         passwordEditText.addShadow(shadowRadius:4 ,shadowOpacity: 0.5)

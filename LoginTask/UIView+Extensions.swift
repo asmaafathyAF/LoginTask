@@ -9,10 +9,7 @@
 import Foundation
 import UIKit
 
-
-
 extension UIView {
-    
     func dismissKeyboardOnTouch(){
         isUserInteractionEnabled = true
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(endEditing(_:))))
@@ -380,11 +377,11 @@ extension UIView {
         
     }
     func setGradient(firstColorGradient : UIColor , secondColorGradient: UIColor) {
-            let layer = CAGradientLayer()
-            layer.frame = self.bounds
-            layer.colors = [firstColorGradient.cgColor,secondColorGradient.cgColor]
-            self.layer.addSublayer(layer)
-        }
+        let layer = CAGradientLayer()
+        layer.frame = self.bounds
+        layer.colors = [firstColorGradient.cgColor,secondColorGradient.cgColor]
+        self.layer.addSublayer(layer)
+    }
     func setGradient(firstColorGradient : UIColor , secondColorGradient: UIColor,startPoint : CGPoint , endPoint : CGPoint) {
          let layer = CAGradientLayer()
          layer.frame = self.bounds

@@ -14,16 +14,24 @@ class SplashViewController: UIViewController {
     private let activityView = UIActivityIndicatorView(style: .gray)
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.setGradient(firstColorGradient: UIColor(red: 0xff, green: 0x90, blue: 0x00), secondColorGradient: UIColor(red: 0xff, green: 0x5f, blue: 0x00))
-        self.view.addSubview(activityView)
+        view.layer.addSublayer(gradientLayer)
+        view.addSubview(logoImage)
+        view.addSubview(activityView)
+        makeServiceCall()
+        setUpUI()
+    }
+    override func viewDidLayoutSubviews() {
+        gradientLayer.frame = view.bounds
+    }
+    let gradientLayer : CAGradientLayer = {
+           var layer = CAGradientLayer()
+        layer.colors = [UIColor(red: 0xff, green: 0x90, blue: 0x00).cgColor, UIColor(red: 0xff, green: 0x5f, blue: 0x00).cgColor]
+        return layer
+       }()
+    func setUpUI() {
+        logoImage.centerEqualTo(view: self.view)
         activityView.centerXequalTo(constraint: self.view.centerXAnchor)
         activityView.bottomEqualTo(constraint: self.view.bottomAnchor, constant: -46)
-        makeServiceCall()
-        setUpView()
-    }
-    func setUpView() {
-               self.view.addSubview(logoImage)
-               logoImage.centerEqualTo(view: self.view)
     }
     let logoImage : UIImageView = {
         let logoImage = UIImageView(image: UIImage(named: "logo"))
@@ -35,12 +43,12 @@ class SplashViewController: UIViewController {
         self.activityView.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+4) {
             self.activityView.stopAnimating()
-           if let _ = UserDefaults.standard.object(forKey: "userName") {
-               AppDelegate.shared.rootViewController.switchToMainScreen()
-           }
-            else {
+//           if let _ = UserDefaults.standard.object(forKey: "userName") {
+//               AppDelegate.shared.rootViewController.switchToMainScreen()
+//           }
+//            else {
                 AppDelegate.shared.rootViewController.showLoginScreen()
-            }
+          //  }
                }
            }
 }

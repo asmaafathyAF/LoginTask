@@ -16,8 +16,8 @@
 		780BCB5D2316101300161BE0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780BCB5C2316101300161BE0 /* UserModel.swift */; };
 		785EFB4E230EEE340012D8C3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785EFB4D230EEE340012D8C3 /* Login.storyboard */; };
 		78790784231357E0001AA7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78790783231357E0001AA7CB /* Assets.xcassets */; };
-		788A5279231408AC00F7B932 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 788A5278231408AC00F7B932 /* Fonts */; };
 		78903E052316B8550025196B /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78903E042316B8550025196B /* LoginAPI.swift */; };
+		7898447023182B4200A6DA11 /* LayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7898446F23182B4200A6DA11 /* LayerContainerView.swift */; };
 		78CDE739230F547500DBC413 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDE738230F547500DBC413 /* LoginViewController.swift */; };
 		78F370CA2316C62400246C62 /* LoginTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F370C92316C62400246C62 /* LoginTaskTests.swift */; };
 		78F370CC2316C69500246C62 /* LoginTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F370CB2316C69500246C62 /* LoginTaskUITests.swift */; };
@@ -62,8 +62,8 @@
 		780BCB5C2316101300161BE0 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		785EFB4D230EEE340012D8C3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		78790783231357E0001AA7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		788A5278231408AC00F7B932 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../../Fonts; sourceTree = "<group>"; };
 		78903E042316B8550025196B /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		7898446F23182B4200A6DA11 /* LayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerContainerView.swift; sourceTree = "<group>"; };
 		78CDE738230F547500DBC413 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78F370C92316C62400246C62 /* LoginTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTaskTests.swift; sourceTree = "<group>"; };
 		78F370CB2316C69500246C62 /* LoginTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTaskUITests.swift; sourceTree = "<group>"; };
@@ -159,6 +159,7 @@
 				78CDE738230F547500DBC413 /* LoginViewController.swift */,
 				2108E05922E5585A00A870AF /* HomeViewController.swift */,
 				78FA2F9723109462007B79EF /* RootViewController.swift */,
+				7898446F23182B4200A6DA11 /* LayerContainerView.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -198,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				2108E01222E4F79100A870AF /* Info.plist */,
-				788A5278231408AC00F7B932 /* Fonts */,
 				78790783231357E0001AA7CB /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -348,7 +348,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				788A5279231408AC00F7B932 /* Fonts in Resources */,
 				2108E05C22E55D8B00A870AF /* Splash.storyboard in Resources */,
 				785EFB4E230EEE340012D8C3 /* Login.storyboard in Resources */,
 				78790784231357E0001AA7CB /* Assets.xcassets in Resources */,
@@ -429,6 +428,7 @@
 				78CDE739230F547500DBC413 /* LoginViewController.swift in Sources */,
 				2108E05A22E5585A00A870AF /* HomeViewController.swift in Sources */,
 				780BCB5D2316101300161BE0 /* UserModel.swift in Sources */,
+				7898447023182B4200A6DA11 /* LayerContainerView.swift in Sources */,
 				78FA2F922310874A007B79EF /* ViewControllersProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
